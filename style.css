@@ -1,0 +1,454 @@
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+}
+
+.logo {
+  flex: 2 1 auto;
+  margin: 3px auto;
+  max-width: 210px;
+  max-height: 37px;
+} 
+
+.icon, .section {
+  font: bold 14px sans-serif;
+  
+  height: 15px;
+  margin: 0 12px;
+}
+
+.menu-item.button {
+  font: bold 10px sans-serif;
+  background-color: #567b95;
+  color: white;
+  
+  border-radius: 5px;
+  
+  padding: 10px;
+  height: 34px;
+  margin-right: 5px;
+}
+
+/* Content */
+
+.content-wrapper {
+  position: relative;
+  margin: 7% auto;
+  width: 55%;
+  max-width: 700px;
+}
+
+.article-title {
+  font: bold italic 40px Times New Roman;
+  margin-top: 30px;
+}
+
+.article-photo-container {
+  display: block;
+  margin: 20px -15%;
+}
+
+.article-photo {
+  max-width: 100%;
+}
+
+#inline-photo {
+  width: 700px;
+  height: auto;
+  margin: 50px auto;
+}
+
+.article-credit, .article-photo-subheading, .article-date {
+  color: #6f6666;
+}
+
+.article-photo-subheading {
+  font: 15px serif;
+  margin-top: 4px;
+}
+
+.rule-below-inflation {
+  width: 75px;
+  height: 1px;
+  
+  margin: auto auto 20px 0;
+}
+
+.article-credit, .article-date {
+  font: 12px serif;
+  margin-top: 2px;
+}
+
+.author {
+  margin: 30px 0;
+}
+
+.signup-reminder, .author > * {
+  color: black;
+  font: bold 15px sans-serif;
+  font-weight: 500;
+}
+
+/* Call-to-Action Box */
+
+.article-interaction-box {
+  display:flex;
+  
+  height: 30px;
+}
+
+.round-button, .bookmark, .comment {
+  height: 28px;
+  width: 28px;
+  margin-left: 12px;
+}
+
+.article-date, .inflation-authors {
+  font: 14px Times New Roman;
+  flex: 1;
+}
+
+.round-button {
+  border-radius: 50%;
+  border-style: solid;
+  
+  background-color: #eeeeee;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.facebook-button {
+  background-image: url('static/facebook.png');
+}
+
+.twitter-button {
+  background-image: url('static/twitter.png')
+}
+
+.email-button {
+  background-image: url('static/email.jpg')
+}
+
+.reply-button {
+  background-image: url('static/reply.png')
+}
+
+.bookmark, .comment {
+  background-color: #ffffff;
+}
+
+/* Article Text Content */
+
+.article-text, .subheadline > h1, .article-photo-heading {
+  font: 23px Times New Roman;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.article-photo-heading {
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+
+.signup-reminder, .signup-reminder-border {
+  margin: 15px 35%;
+  text-align: center;
+}
+
+.signup-reminder-border, .editors-picks-border {
+  color: #ffffff;
+  height: 1px;
+}
+
+.signup-reminder > a {
+  text-decoration: none;
+  color: #326894;
+}
+
+.subheadline > h1 {
+  font-weight: 700;
+}
+
+/* Editor's Picks side container */
+
+.editors-picks-container {
+  position: absolute;
+  right: 0;
+  margin-right: 5%;
+  top: 80%;
+  
+  width: 200px;
+  
+  font: 13px serif;
+}
+
+.editors-picks-heading {
+  font-weight: 700;
+}
+
+.editors-picks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.editors-picks > img {
+  height: 70px;
+  margin: 5px;
+}
+
+.editors-picks > div {
+  flex: 1;
+  padding: 5px;
+}
+
+/* Theory of Inflation diagram */
+
+.inflation-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  height: 550px;
+  background-image: url('static/inflation.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.inflation-text-item {  
+  width: 225px;
+  margin-top: 150px;
+}
+
+.inflation-text-item > h6 {
+  float: left;
+  margin-right: 10px;
+  
+  font: 11px sans-serif;
+  font-weight: 700;
+}
+
+.inflation-text-item > p {
+  font: 12px sans-serif;
+}
+
+.top-row {
+  align-self: flex-start;
+}
+
+.bottom-row {
+  align-self: flex-end;
+}
+
+/* Below Article Reference text */
+
+.article-reference {
+  color: grey;
+  font: 11px sans-serif;
+}
+
+.article-reference-link {
+  margin: 0 2px;
+  color: #7d74a4;
+}
+
+/* Below Article Interaction bar */
+
+.below-article-bar {
+  width: 100%;
+  height: 40px;
+  
+  margin: 30px 0;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.below-article-bar > .menu-item.button {
+  max-width: 350px;
+  
+  flex: 1;
+}
+
+.below-article-bar.menu-item {
+  margin-right: 5px;
+}
+
+.facebook-button {
+  margin-left: auto;
+}
+
+/* Footer */
+
+.footer, .site-navigation {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Related Articles Footer */
+
+.related-articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.related-articles-heading {
+  border-top: 1px solid black;
+}
+
+.photo-accompanied-articles {
+  flex: 3;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.photo-accompanied-article-container {
+  width: 32%;
+  margin-bottom: 30px;
+}
+
+.photo-accompanied-article-container > img {
+  width: 100%;
+}
+
+.article-photo-credit {  
+  font: 10px serif;
+  color: #6f6666;
+  text-align: right;
+}
+
+.article-headline {
+  margin: 5px 0;
+  
+  font: 18px Times New Roman;
+}
+
+.text-only-articles {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: 25px;
+}
+
+.related-articles-heading, .text-only-article-container {
+  padding: 17px 0;
+  width: 100%;
+}
+
+.related-articles-heading {  
+  font: 14px sans-serif;
+  font-weight: 700;
+}
+
+.text-only-article-container {
+  border-top: 1px solid lightgrey;
+}
+
+/* Site Nav Footer */
+
+.site-navigation {
+  margin-top: 20px;
+  border-top: 3px double lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.sitenav-logo-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sitenav-logo-bar > img {
+  margin-left: 0;
+}
+
+.logo-bar-homepage-link {
+  text-decoration: none;
+  font: 10px sans-serif;
+  color: #60839b;
+  margin-top: 10px;
+}
+
+.site-sections {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 10px;
+}
+
+.site-section-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-section-column.subscribe {
+  border-left: 1px solid lightgrey;
+  padding-left: 15px;
+}
+
+.site-section {
+  margin-bottom: 10px;
+  font: 12px sans-serif;
+}
+
+.site-section.headline {
+  font-weight: 700;
+}
+
+.subscribe-section-bold-icon {
+  font: 14px sans-serif;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.site-section-icon {
+  height: 15px;
+   width: 15px;
+ }
+ 
+ .subscribe-section-small {
+  font: 10px sans-serif;
+  margin-bottom: 7px;
+ }
+ 
+ .subscribe-section.rule {
+  width: 100%;
+  
+  color: #e2e2e2;
+ }
+ 
+ /* NYT Company Footer Bar */
+ 
+ .nyt-company-footer-bar {
+   display: flex;
+   justify-content: space-between;
+   
+   margin: 0 auto;
+   padding: 10px 0;
+   max-width: 1200px;
+   width: 80%;
+ }
+ 
+ .company-footer-item {
+   font: 10px sans serif;
+   color: grey;
+   margin-bottom: 18px;
+ }
